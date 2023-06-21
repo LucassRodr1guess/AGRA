@@ -1,0 +1,25 @@
+ion-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ion-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ion-button {
+    display: flex;
+    align-items: center;
+}
+
+ion-icon {
+    margin-left: 8px;
+}
+
+.PosBotao {
+    padding: 20px;
+}
+

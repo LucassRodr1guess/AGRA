@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavigationExtras, Router} from '@angular/router'
+import {NavigationExtras, Router} from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
