@@ -1,6 +1,6 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Home Page</ion-title>
+    <ion-title>AGRA</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,26 +10,56 @@
       <ion-title size="large">Home Page</ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-content>
-    <div class="PosCard">
-      <ion-card>
-        <img alt="Silhouette of mountains" src="https://media.discordapp.net/attachments/1116018805227917344/1118128892927033414/grafico-removebg-preview.png?width=136&height=136" style="width: 200px; height: 200px;"/>  
-        <ion-card-header>
-          <ion-card-title>Dados Gerais</ion-card-title>
-          <ion-card-subtitle>plantações</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
+    
+    <div className="testeBI"> 
+      <h1>Aparecer BI feito pelo Fernando</h1>
+      <img src="https://media.discordapp.net/attachments/1116018947897167902/1149056263104233542/MicrosoftTeams-image.png?width=960&height=533" alt="">
     </div>
+    
     <div class="PosBotao">
-      <ion-button (click)="exibirCadastroDados()">Cadastro de Dados
-        <ion-icon name="download-outline"></ion-icon>
-      </ion-button> 
-      <ion-button (click)="exibirsugestao()">Sugestões 
-        <ion-icon name="information-outline"></ion-icon>
-      </ion-button>
-      <ion-button (click)="exibirreducao()">Redução de Custos
-        <ion-icon name="cash-outline"></ion-icon>
-      </ion-button>
-    </div>
-  </ion-content>
-</ion-content>
+      <ion-card color="success">
+          <ion-card-header (click)="exibirCadastroDados()">
+            <ion-card-title>
+           <ion-icon name="download-outline"></ion-icon> </ion-card-title>
+            <ion-card-title>Cadastro de Dados</ion-card-title>
+            <ion-card-content>Para conseguirmos entregar as informações necessárias, insira alguns dados referentes ao
+              seu terreno e sua cultura</ion-card-content>
+          </ion-card-header>
+          </ion-card>
+
+          <ion-card color="success">
+            <ion-card-header (click)="exibirsugestao()">
+              <ion-card-title>
+             <ion-icon name="information-outline"></ion-icon> </ion-card-title>
+              <ion-card-title>Sugestões</ion-card-title>
+              <ion-card-content>
+                Aqui temos algumas sugestões e informações 
+              </ion-card-content>
+            </ion-card-header>
+            </ion-card>
+
+            <ion-card color="success">
+              <ion-card-header (click)="exibirreducao()">
+                <ion-card-title>
+               <ion-icon name="cash-outline"></ion-icon> </ion-card-title>
+                <ion-card-title>Redução de Custos</ion-card-title>
+                <ion-card-content>
+                  Aqui temos algumas medidas que podem ser tomadas para reduzir seus gastos
+                </ion-card-content>
+              </ion-card-header>
+              </ion-card>
+
+
+
+
+
+        </div>
+        
+  
+
+
+
+  
+  

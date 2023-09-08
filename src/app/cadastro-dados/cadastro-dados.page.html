@@ -27,13 +27,9 @@
 
     <ion-list>
     <ion-radio-group value="Cultura">
-      <ion-radio value="Trigo">Trigo</ion-radio><br />
-      <ion-radio value="Milho">Milho</ion-radio><br />
-      <ion-radio value="Arroz">Arroz</ion-radio><br />
-      <ion-radio value="Uva">Uva</ion-radio><br />
-      <ion-radio value="Maca">Maçã</ion-radio><br />
-      <ion-radio value="Cafe">Café</ion-radio><br />
-      <ion-radio value="Tomate">Tomate</ion-radio><br />
+      <ion-radio value="Algodao">Algodão</ion-radio><br />
+      <ion-radio value="Soja">Soja</ion-radio><br />
+
     </ion-radio-group>
   </ion-list>
 
@@ -50,11 +46,21 @@
       <ion-radio value="Moluscicidas">Moluscicidas</ion-radio><br />
       <ion-radio value="Rodenticidas">Rodenticidas</ion-radio><br />
       <ion-radio value="Repelentes">Repelentes</ion-radio><br />
-      <ion-radio value="Reguladores de Crescimento de Plantas">Reguladores de Crescimento de Plantas</ion-radio><br />
-      <ion-radio value="Feromônios e Atrativos">Feromônios e Atrativos</ion-radio><br />
-      <ion-radio value="Isca Envenenada">Isca Envenenada</ion-radio><br />
+      <ion-radio value="ReguladoresdeCrescimentodePlantas">Reguladores de Crescimento de Plantas</ion-radio><br />
+      <ion-radio value="FeromonioseAtrativos">Feromônios e Atrativos</ion-radio><br />
+      <ion-radio value="IscaEnvenenada">Isca Envenenada</ion-radio><br />
     </ion-radio-group>
   </ion-list>
+
+  <div>
+    <h5>Insira a data de Plantio</h5>
+  <ion-item>
+    <ion-datetime presentation="date" [preferWheel]="true" value="dataPlantio"></ion-datetime>
+  </ion-item>
+</div>
+
+
+  
 
   </div>
 </ion-content>

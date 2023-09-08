@@ -11,11 +11,14 @@ export class CadastroDadosPage implements OnInit {
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
+
+
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       const getNav = this.router.getCurrentNavigation();
      //sem if pq nn tem a parte de cadastrar os dados ainda
     });
   }
+  
 
 }

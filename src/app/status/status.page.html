@@ -4,7 +4,7 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Necessidades Plantações 
+      Status Plantações (puxar value da cultura escolhida (cadastro de dados) para mostrar aqui e ter os conteúdos com base na cultura)
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -30,6 +30,24 @@
 
   <ion-card>
     <ion-card-header>
+      Estação do Ano - Plantio
+    </ion-card-header>
+    <ion-card-content>
+      Sua Cultura está sendo plantada em uma estação benéfica/maléfica para a cultura
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Estação do Ano - Colheita
+    </ion-card-header>
+    <ion-card-content>
+      Sua Cultura está prevista para a colheita em uma estação benéfica/maléfica para a cultura
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
       Preparação do Solo
     </ion-card-header>
     <ion-card-content>
@@ -48,10 +66,39 @@
 
   <ion-card>
     <ion-card-header>
+      Pragas
+    </ion-card-header>
+    <ion-card-content>
+      Para a sua colheita, temos esses tipos de pragas:
+      <ion-list>
+        <ion-item>
+          <ion-label>Praga 1</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Praga 2</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Praga 3</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
       Controle de Pragas
     </ion-card-header>
     <ion-card-content>
       Para um controle de pragas mais eficiente, deve ser utilizado ...
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Previsão Colheita
+    </ion-card-header>
+    <ion-card-content>
+      Sua plantação deverá estar pronta para a colheita em x dias
     </ion-card-content>
   </ion-card>
 
@@ -71,11 +118,5 @@
     <ion-card-content>
       Para armazenar o produto, é necessário ...  
     </ion-card-content>
-   
   </ion-card>
-
-
-  
-
-
 </ion-content>
