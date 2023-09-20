@@ -14,53 +14,58 @@
     <h5>Coloque pelo CAR os hectares referentes ao seu terreno</h5>
     <input type="email" name="DadosCAR" id="">
 
-
-    <h5>Tipo de solo</h5>
-    <ion-radio-group [allowEmptySelection]="true" value="turtles">
-      <ion-radio value="Arenoso">Arenoso</ion-radio><br />
-      <ion-radio value="Argiloso">Argiloso</ion-radio><br />
-      <ion-radio value="Humoso">Humoso</ion-radio><br />
-      <ion-radio value="Calcário">Calcário</ion-radio>
-    </ion-radio-group>
-
+    <div>
+      <h5>Tipo de solo</h5>
+      <ion-radio-group [allowEmptySelection]="true" value="turtles">
+        <div style="margin-left: 25px;">
+          <ion-radio value="Arenoso">Arenoso</ion-radio><br />
+          <ion-radio value="Argiloso">Argiloso</ion-radio><br />
+          <ion-radio value="Humoso">Humoso</ion-radio><br />
+          <ion-radio value="Calcário">Calcário</ion-radio>
+        </div>
+      </ion-radio-group>
+    </div>
     <h5>Tipo de Cultura</h5>
 
     <ion-list>
-    <ion-radio-group value="Cultura">
-      <ion-radio value="Algodao">Algodão</ion-radio><br />
-      <ion-radio value="Soja">Soja</ion-radio><br />
-
-    </ion-radio-group>
-  </ion-list>
-
-
-  <h5>Tipo de Pesticidas</h5>
-  <ion-list>
-    <ion-radio-group value="">
-      <ion-radio value="Inseticida">Inseticida</ion-radio><br />
-      <ion-radio value="Herbicidas">Herbicidas</ion-radio><br />
-      <ion-radio value="Fungicidas">Fungicidas</ion-radio><br />
-      <ion-radio value="Bactericidas">Bactericidas</ion-radio><br />
-      <ion-radio value="Nematicidas">Nematicidas</ion-radio><br />
-      <ion-radio value="Acaricidas">Acaricidas</ion-radio><br />
-      <ion-radio value="Moluscicidas">Moluscicidas</ion-radio><br />
-      <ion-radio value="Rodenticidas">Rodenticidas</ion-radio><br />
-      <ion-radio value="Repelentes">Repelentes</ion-radio><br />
-      <ion-radio value="ReguladoresdeCrescimentodePlantas">Reguladores de Crescimento de Plantas</ion-radio><br />
-      <ion-radio value="FeromonioseAtrativos">Feromônios e Atrativos</ion-radio><br />
-      <ion-radio value="IscaEnvenenada">Isca Envenenada</ion-radio><br />
-    </ion-radio-group>
-  </ion-list>
-
-  <div>
-    <h5>Insira a data de Plantio</h5>
-  <ion-item>
-    <ion-datetime presentation="date" [preferWheel]="true" value="dataPlantio"></ion-datetime>
-  </ion-item>
-</div>
+      <ion-radio-group value="Cultura">
+        <div style="margin-left: 25px;">
+          <ion-radio value="Algodao">Algodão</ion-radio><br />
+          <ion-radio value="Soja">Soja</ion-radio><br />
+        </div>
+      </ion-radio-group>
+    </ion-list>
 
 
-  
+    <h5>Tipo de Pesticidas</h5>
+    <ion-list>
+      <ion-radio-group value="">
+        <div style="margin-left: 25px;">
+          <ion-radio value="Inseticida">Inseticida</ion-radio><br />
+          <ion-radio value="Herbicidas">Herbicidas</ion-radio><br />
+          <ion-radio value="Fungicidas">Fungicidas</ion-radio><br />
+          <ion-radio value="Bactericidas">Bactericidas</ion-radio><br />
+          <ion-radio value="Nematicidas">Nematicidas</ion-radio><br />
+          <ion-radio value="Acaricidas">Acaricidas</ion-radio><br />
+          <ion-radio value="Moluscicidas">Moluscicidas</ion-radio><br />
+          <ion-radio value="Rodenticidas">Rodenticidas</ion-radio><br />
+          <ion-radio value="Repelentes">Repelentes</ion-radio><br />
+          <ion-radio value="ReguladoresdeCrescimentodePlantas">Reguladores de Crescimento de Plantas</ion-radio><br />
+          <ion-radio value="FeromonioseAtrativos">Feromônios e Atrativos</ion-radio><br />
+          <ion-radio value="IscaEnvenenada">Isca Envenenada</ion-radio><br />
+        </div>
+      </ion-radio-group>
+    </ion-list>
+
+    <div>
+      <h5>Insira a data de Plantio</h5>
+      <ion-item>
+        <ion-datetime presentation="date" [preferWheel]="true" style="padding-left: 25px;" value="dataPlantio"></ion-datetime>
+      </ion-item>
+    </div>
+
+
+
 
   </div>
 </ion-content>
