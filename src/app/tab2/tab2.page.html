@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Dados Plantações
+      Status
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,15 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Dados Plantações</ion-title>
+      <ion-title size="large">Status</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-accordion-group>
     <ion-accordion value="first">
       <ion-item slot="header" color="light">
-        <ion-label>Selecione sua plantação</ion-label>
+        <ion-label>Selecione sua Cultura</ion-label>
       </ion-item>
-      <div class="ion-padding" (click)="exibirstatus()"slot="content">Algodão</div>
+      <!--colocar para criar conforme o usuário criar os status na página Cadastro-dados-->
+      <div class="ion-padding" (click)="exibirstatus()"slot="content">Algodão</div> 
       <div class="ion-padding" (click)="exibirstatus()"slot="content">Soja</div>
     </ion-accordion>
     </ion-accordion-group>

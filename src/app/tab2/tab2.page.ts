@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NavigationExtras, Router} from '@angular/router'
+import { CadastroDadosPage } from '../cadastro-dados/cadastro-dados.page';
 
 
 @Component({
@@ -8,7 +9,8 @@ import {NavigationExtras, Router} from '@angular/router'
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
+  
+  
   constructor(public router: Router) {}
 
 

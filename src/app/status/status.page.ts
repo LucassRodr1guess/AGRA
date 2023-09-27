@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { CadastroDadosPage } from '../cadastro-dados/cadastro-dados.page';
 
 @Component({
   selector: 'app-status',

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import {NavigationExtras ,Router} from '@angular/router';
 import { ActivatedRoute } from '@angular/router'; 
+
 
 @Component({
   selector: 'app-cadastro-dados',
@@ -9,6 +10,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CadastroDadosPage implements OnInit {
 
+  tipoSolo="";
+  tipoCultura="";
+  tipoPesticida="";
+  dataPlantio:any;
   constructor(private route: ActivatedRoute, private router: Router) { }
 
 
@@ -19,6 +24,11 @@ export class CadastroDadosPage implements OnInit {
      //sem if pq nn tem a parte de cadastrar os dados ainda
     });
   }
-  
+  //criacaoStatus() {
+    // if(){
+        
+   //  }
+   //}
+   
 
 }

@@ -12,7 +12,12 @@
   </ion-header>
 
   <ion-content>
-    
+
+    <ion-card>
+           <img src="../assets/3106921.png" alt="" />
+      <ion-card-title>Olá, (nome)</ion-card-title>
+      <ion-card-content>Seja Bem-vindo ao software da AGRA</ion-card-content>
+    </ion-card>
     <div className="testeBI" style="display: flex; align-items: center; justify-content: center; flex-direction: column;"> 
       <h1>Aparecer BI feito pelo Fernando</h1>
       <img src="https://media.discordapp.net/attachments/1116018947897167902/1149056263104233542/MicrosoftTeams-image.png?width=960&height=533" alt="">
@@ -21,40 +26,23 @@
     <div class="PosBotao">
       <ion-card color="success">
           <ion-card-header (click)="exibirCadastroDados()">
-            <ion-card-title>
-           <ion-icon name="download-outline"></ion-icon> </ion-card-title>
             <ion-card-title>Cadastro de Dados</ion-card-title>
-            <ion-card-content>Para conseguirmos entregar as informações necessárias, insira alguns dados referentes ao
-              seu terreno e sua cultura</ion-card-content>
           </ion-card-header>
           </ion-card>
 
           <ion-card color="success">
             <ion-card-header (click)="exibirsugestao()">
-              <ion-card-title>
-             <ion-icon name="information-outline"></ion-icon> </ion-card-title>
+              
               <ion-card-title>Sugestões</ion-card-title>
-              <ion-card-content>
-                Aqui temos algumas sugestões e informações 
-              </ion-card-content>
+              
             </ion-card-header>
             </ion-card>
 
             <ion-card color="success">
               <ion-card-header (click)="exibirreducao()">
-                <ion-card-title>
-               <ion-icon name="cash-outline"></ion-icon> </ion-card-title>
                 <ion-card-title>Redução de Custos</ion-card-title>
-                <ion-card-content>
-                  Aqui temos algumas medidas que podem ser tomadas para reduzir seus gastos
-                </ion-card-content>
               </ion-card-header>
               </ion-card>
-
-
-
-
-
         </div>
         
   

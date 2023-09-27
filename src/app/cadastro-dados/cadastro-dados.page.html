@@ -9,51 +9,65 @@
 
 <ion-content [fullscreen]="true">
 
+  <ion-card>
+    <ion-card-title>Cadastro de Dados</ion-card-title>
+    <ion-card-content>
+      Para conseguirmos entregar as informações neceessárias, insira alguns dados referentes ao seu terreno e sua cultura
+    </ion-card-content>
+  </ion-card>
   <div class="conteudo-principal">
-    <h2>Cadastro de Informações</h2>
-    <h5>Coloque pelo CAR os hectares referentes ao seu terreno</h5>
-    <input type="email" name="DadosCAR" id="">
+    <h5>Aplicação CAR</h5>
+    <input type="email" name="dadosCAR" id="">
 
     <div>
       <h5>Tipo de solo</h5>
-      <ion-radio-group [allowEmptySelection]="true" value="turtles">
+      <ion-card>
+      <ion-radio-group [allowEmptySelection]="true" value="tipoSolo">
         <div style="margin-left: 25px;">
-          <ion-radio value="Arenoso">Arenoso</ion-radio><br />
-          <ion-radio value="Argiloso">Argiloso</ion-radio><br />
-          <ion-radio value="Humoso">Humoso</ion-radio><br />
-          <ion-radio value="Calcário">Calcário</ion-radio>
+          <ion-radio value="arenoso">Arenoso</ion-radio><br />
+          <ion-radio value="argiloso">Argiloso</ion-radio><br />
+          <ion-radio value="humoso">Humoso</ion-radio><br />
+          <ion-radio value="calcário">Calcário</ion-radio>
         </div>
       </ion-radio-group>
+    </ion-card>
     </div>
-    <h5>Tipo de Cultura</h5>
 
+
+    <h5>Tipo de Cultura</h5>
+    <ion-card>
     <ion-list>
-      <ion-radio-group value="Cultura">
+      <ion-radio-group value="tipoCultura">
         <div style="margin-left: 25px;">
-          <ion-radio value="Algodao">Algodão</ion-radio><br />
-          <ion-radio value="Soja">Soja</ion-radio><br />
+          <ion-radio value="algodao">Algodão</ion-radio><br />
+          <ion-radio value="soja">Soja</ion-radio><br />
         </div>
       </ion-radio-group>
     </ion-list>
+  </ion-card>
 
 
     <h5>Tipo de Pesticidas</h5>
+    <ion-card>
     <ion-list>
-      <ion-radio-group value="">
+      <ion-radio-group value="tipoPesticida">
         <div style="margin-left: 25px;">
-          <ion-radio value="Herbicidas">Herbicidas</ion-radio><br />
-          <ion-radio value="Inseticidas">Inseticidas</ion-radio><br />
-          <ion-radio value="Fungicidas">Fungicidas</ion-radio><br />
-          <ion-radio value="Nematicidas">Nematicidas</ion-radio><br />
+          <ion-radio value="herbicidas">Herbicidas</ion-radio><br />
+          <ion-radio value="inseticidas">Inseticidas</ion-radio><br />
+          <ion-radio value="fungicidas">Fungicidas</ion-radio><br />
+          <ion-radio value="nematicidas">Nematicidas</ion-radio><br />
         </div>
       </ion-radio-group>
     </ion-list>
+  </ion-card>
 
     <div>
-      <h5>Insira a data de Plantio</h5>
+      <h5>Data de Plantio</h5>
       <ion-item>
-        <ion-datetime presentation="date" [preferWheel]="true" style="padding-left: 25px;" value="dataPlantio"></ion-datetime>
+        <ion-datetime locale="es-ES"></ion-datetime>
       </ion-item>
     </div>
+    <ion-button expand="block"> 
+      Criar Status</ion-button><!--passar para toast de página criada e recomendar a volta para a página principal-->
   </div>
 </ion-content>
