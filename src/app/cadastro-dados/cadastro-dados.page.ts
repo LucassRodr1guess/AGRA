@@ -21,14 +21,47 @@ export class CadastroDadosPage implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       const getNav = this.router.getCurrentNavigation();
-     //sem if pq nn tem a parte de cadastrar os dados ainda
+     
     });
   }
-  //criacaoStatus() {
-    // if(){
-        
-   //  }
-   //}
-   
 
+  salvarDados() {
+    const tipoSoloRadioButtons = document.getElementsByName("tipoSolo");
+    for (let i = 0; i < tipoSoloRadioButtons.length; i++) {
+        const radioButtonSolo = tipoSoloRadioButtons[i] as HTMLInputElement;
+        if (radioButtonSolo.checked) {
+            this.tipoSolo = radioButtonSolo.value;
+            break;
+        }
+    }
+
+ 
+    const tipoCulturaRadioButtons = document.getElementsByName("tipoCultura");
+    for (let i = 0; i < tipoCulturaRadioButtons.length; i++) {
+        const radioButtonCultura = tipoCulturaRadioButtons[i] as HTMLInputElement;
+        if (radioButtonCultura.checked) {
+            this.tipoCultura = radioButtonCultura.value;
+            break;
+        }
+    }
+
+
+    const tipoPesticidaRadioButtons = document.getElementsByName("tipoPesticida");
+    for (let i = 0; i < tipoPesticidaRadioButtons.length; i++) {
+        const radioButtonPesticida = tipoPesticidaRadioButtons[i] as HTMLInputElement;
+        if (radioButtonPesticida.checked) {
+            this.tipoPesticida = radioButtonPesticida.value;
+            break;
+        }
+    }
+
+   
+    console.log("Tipo de Solo Selecionado: " + this.tipoSolo);
+    console.log("Tipo de Cultura Selecionado: " + this.tipoCultura);
+    console.log("Tipo de Pesticida Selecionado: " + this.tipoPesticida);
+
+    localStorage.setItem("tipoSolo", this.tipoSolo);
+    localStorage.setItem("tipoCultura", this.tipoCultura);
+    localStorage.setItem("tipoPesticida", this.tipoPesticida);
 }
+  }
