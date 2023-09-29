@@ -64,9 +64,10 @@
     <div>
       <h5>Data de Plantio</h5>
       <ion-item>
-        <ion-datetime locale="es-ES" [(ngModel)]="dataPlantio"></ion-datetime>
+        <ion-input type="date" [(ngModel)]="dataPlantio"></ion-input>
       </ion-item>
     </div>
+   
     <ion-button expand="block" (click)="salvarDados()"> 
       Criar Status</ion-button>
   </div>

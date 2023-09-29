@@ -19,6 +19,7 @@ export class Tab2Page implements OnInit {
     function criarOpcaoCultura(){
       const botaoCultura = document.createElement("ion-button");
    }
+   localStorage.setItem("tipoCultura", this.tipoCultura);
   }
 
   exibirstatus() {
@@ -26,5 +27,6 @@ export class Tab2Page implements OnInit {
      this.router.navigate(['status']);
    }
    //Puxar o nome da cultura selecionada para criar o botão das culturas com o click de exibir os resultados
+   
  
  }

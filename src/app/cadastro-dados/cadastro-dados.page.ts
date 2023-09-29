@@ -55,7 +55,7 @@ export class CadastroDadosPage implements OnInit {
         }
     }
 
-   
+   console.log(this.dataPlantio);
     console.log("Tipo de Solo Selecionado: " + this.tipoSolo);
     console.log("Tipo de Cultura Selecionado: " + this.tipoCultura);
     console.log("Tipo de Pesticida Selecionado: " + this.tipoPesticida);
@@ -63,5 +63,6 @@ export class CadastroDadosPage implements OnInit {
     localStorage.setItem("tipoSolo", this.tipoSolo);
     localStorage.setItem("tipoCultura", this.tipoCultura);
     localStorage.setItem("tipoPesticida", this.tipoPesticida);
+    localStorage.setItem("dataPlantio", this.dataPlantio);
 }
   }

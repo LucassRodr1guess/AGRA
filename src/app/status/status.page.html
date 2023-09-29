@@ -4,7 +4,7 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Status Plantações (puxar value da cultura escolhida (cadastro de dados) para mostrar aqui e ter os conteúdos com base na cultura)
+      Status Plantações 
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,7 +12,7 @@
 <ion-content>
   <div>
     <ion-card>
-      <ion-card-title>Cultura - (cultura selecionada)</ion-card-title>
+      <ion-card-title>Cultura {{tipoCultura}}</ion-card-title>
       <ion-card-content>Cultura que o usuário cadastrar os dados</ion-card-content>
     </ion-card>
   </div>
@@ -20,8 +20,8 @@
     <ion-card-header>
       Clima Ideal
     </ion-card-header>
-    <ion-card-content>
-       Temperatura Ideal: yº
+    <ion-card-content *ngIf="valorClima">
+        O clima ideal para sua cultura é: {{valorClima}}
     </ion-card-content>
   </ion-card>
 
@@ -29,8 +29,8 @@
     <ion-card-header>
       Tempo para Colheita
     </ion-card-header>
-    <ion-card-content>
-      A plantação estará ideal para a colheita em ... dias (data)
+    <ion-card-content *ngIf="diasColheita">
+      A plantação estará ideal para a colheita em {{diasColheita}}
     </ion-card-content>
   </ion-card>
 
