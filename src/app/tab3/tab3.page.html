@@ -6,53 +6,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-header>
-      <img src="" alt="">
-      <ion-card-title>Notícias</ion-card-title>
-      <ion-card-subtitle>tema da notícia</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Pequena descrição da notícia, resumida, para despertar interesse no leitor e possivelmente gerar cliques.
-    </ion-card-content>
-  </ion-card> 
-
-  <ion-card>
-    <ion-card-header>
-      <img src="" alt="">
-      <ion-card-title>Notícias</ion-card-title>
-      <ion-card-subtitle>tema da notícia</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Pequena descrição da notícia, resumida, para despertar interesse no leitor e possivelmente gerar cliques.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <img src="" alt="">
-      <ion-card-title>Notícias</ion-card-title>
-      <ion-card-subtitle>tema da notícia</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Pequena descrição da notícia, resumida, para despertar interesse no leitor e possivelmente gerar cliques.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <img src="" alt="">
-      <ion-card-title>Notícias</ion-card-title>
-      <ion-card-subtitle>tema da notícia</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Pequena descrição da notícia, resumida, para despertar interesse no leitor e possivelmente gerar cliques.
-    </ion-card-content>
-  </ion-card>
-
+<ion-content fullscreen="true">
+  <ion-list>
+    <ion-item *ngFor="let newsItem of agricultureNews">
+      <ion-thumbnail slot="start">
+        <img [src]="newsItem.urlToImage" alt="Imagem da Notícia">
+      </ion-thumbnail>
+      
+      <ion-label>
+        <h2>{{ newsItem.title }}</h2>
+        <p>{{ newsItem.description }}</p>
+        <a [href]="newsItem.url" target="_blank" rel="noopener noreferrer">Ler mais</a>
+      </ion-label>
+    
+    </ion-item>
+  </ion-list>
 </ion-content>
