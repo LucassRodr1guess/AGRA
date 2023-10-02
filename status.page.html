@@ -1,0 +1,121 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"> 
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Status Plantações 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card>
+      <ion-card-title>Cultura {{tipoCultura}}</ion-card-title>
+      <ion-card-content>Cultura que o usuário cadastrar os dados</ion-card-content>
+    </ion-card>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      Clima Ideal
+    </ion-card-header>
+    <ion-card-content *ngIf="valorClima">
+        O clima ideal para sua cultura é: {{valorClima}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Tempo para Colheita
+    </ion-card-header>
+    <ion-card-content *ngIf="diasColheita">
+      A plantação estará ideal para a colheita em {{diasColheita}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Estação do Ano - Plantio
+    </ion-card-header>
+    <ion-card-content *ngIf="estacaoqldd">
+      {{estacaoqldd}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Estação do Ano - Colheita
+    </ion-card-header>
+    <ion-card-content *ngIf="epocaColheita">
+      {{epocaColheita}}
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      Preparação do Solo
+    </ion-card-header>
+    <ion-card-content *ngIf="soloRec">
+      {{soloRec}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Irrigação e Nutrição recomendada
+    </ion-card-header>
+    <ion-card-content *ngIf="tratamentoSolo">
+      {{tratamentoSolo}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Pragas
+    </ion-card-header>
+    <ion-card-content>
+      Para a sua colheita, temos esses tipos de pragas:
+      <ion-card-content *ngIf="pragas">
+        {{pragas}}
+
+      </ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Controle de Pragas
+    </ion-card-header>
+    <ion-card-content ngIf="cuidados">
+      {{cuidados}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Previsão Colheita
+    </ion-card-header>
+    <ion-card-content>
+      Sua plantação deverá estar pronta para a colheita em x dias
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Colheita
+    </ion-card-header>
+    <ion-card-content>
+      Para um maior proveito da colheita, você deve ...
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Armazenamento
+    </ion-card-header>
+    <ion-card-content>
+      Para armazenar o produto, é necessário ...  
+    </ion-card-content>
+  </ion-card>
+</ion-content>
