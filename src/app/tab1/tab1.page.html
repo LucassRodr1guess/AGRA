@@ -1,53 +1,82 @@
+
 <ion-header>
+
   <ion-toolbar>
-    <ion-title>AGRA</ion-title>
+
+    <ion-title>Início</ion-title>
+
   </ion-toolbar>
+
 </ion-header>
 
+ 
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home Page</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-content>
+  <ion-card class="card-usuario">
 
-    <ion-card>
-           <img src="../assets/3106921.png" alt="" />
+    <div>
+
+      <img src="../assets/usuario.jpg" alt="" />
+
       <ion-card-title>Olá, (nome)</ion-card-title>
-      <ion-card-content>Seja Bem-vindo ao software da AGRA</ion-card-content>
-    </ion-card>
-    <div className="testeBI" style="display: flex; align-items: center; justify-content: center; flex-direction: column;"> 
-      <h1>Aparecer BI feito pelo Fernando</h1>
-      <img src="https://media.discordapp.net/attachments/1116018947897167902/1149056263104233542/MicrosoftTeams-image.png?width=960&height=533" alt="">
+
     </div>
-    
-    <div class="PosBotao">
-      <ion-card color="success">
-          <ion-card-header (click)="exibirCadastroDados()">
-            <ion-card-title>Cadastro de Dados</ion-card-title>
-          </ion-card-header>
-          </ion-card>
 
-          <ion-card color="success">
-            <ion-card-header (click)="exibirsugestao()">
-              
-              <ion-card-title>Sugestões</ion-card-title>
-              
-            </ion-card-header>
-            </ion-card>
+    <ion-card-content>Seja Bem-vindo ao software da AGRA</ion-card-content>
 
-            <ion-card color="success">
-              <ion-card-header (click)="exibirreducao()">
-                <ion-card-title>Redução de Custos</ion-card-title>
-              </ion-card-header>
-              </ion-card>
-        </div>
-        
-  
+  </ion-card>
 
+ 
 
+  <div class="testeBI">
 
-  
-  
+    <p>Aparecer BI feito pelo Fernando</p>
+
+    <iframe title="Report Section" width="240" height="200" src="https://app.powerbi.com/view?r=eyJrIjoiN2NlMzQ0NzctMGVjZi00YzQ5LWIxNzktNDNmZmE2OWZiOWUzIiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+  </div>
+
+   
+
+  <div class="PosBotao">
+
+    <ion-card class="btn-home">
+
+      <ion-card-header (click)="exibirCadastroDados()">
+
+        <ion-card-title>Cadastro de Dados</ion-card-title>
+
+      </ion-card-header>
+
+    </ion-card>
+
+ 
+
+    <ion-card class="btn-home">
+
+      <ion-card-header (click)="exibirsugestao()">
+
+        <ion-card-title>Sugestões</ion-card-title>
+
+      </ion-card-header>
+
+    </ion-card>
+
+ 
+
+    <ion-card class="btn-home">
+
+      <ion-card-header (click)="exibirreducao()">
+
+        <ion-card-title>Redução de Custos</ion-card-title>
+
+      </ion-card-header>
+
+    </ion-card>
+
+  </div>
+
+</ion-content>
+
+Power BI Error

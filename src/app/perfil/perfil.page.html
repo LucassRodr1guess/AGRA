@@ -1,18 +1,43 @@
 <ion-header>
+
   <ion-toolbar>
+
     <ion-title>Perfil</ion-title>
+
   </ion-toolbar>
+
 </ion-header>
 
+ 
+
 <ion-content>
+
   <div class="profile-container">
-    <img class="profile-picture" src="../assets/3106921.png" alt="Foto de perfil">
-    <h2 class="profile-name">Nome do Usuário</h2>
-    <p class="profile-description">*Descrição do usuário*</p>
-    <h3>Informações de Login</h3>
-    <h5>e-mail:</h5>
-    <h5>senha:</h5>
+
+    <div class="profile-information">
+
+      <img class="profile-picture" src="../assets/3106921.png" alt="Foto de perfil">
+
+      <h2 class="profile-name">Usuário</h2>
+
+      <p class="profile-description">* Descrição *</p>
+
+    </div>
+
+    <div class="profile-contact">
+
+      <h3>Informações de Login</h3>
+
+      <p>e-mail:</p>
+
+      <p>senha:</p>
+
+    </div>
+
+ 
 
     <ion-button expand="full" (click)="goToLogin()">Fazer Login / Registrar</ion-button>
+
   </div>
+
 </ion-content>

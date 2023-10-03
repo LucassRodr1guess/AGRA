@@ -1,24 +1,47 @@
 <ion-header [translucent]="true">
+
   <ion-toolbar>
+
     <ion-title>
+
       Blog
+
     </ion-title>
+
   </ion-toolbar>
+
 </ion-header>
 
+ 
+
 <ion-content fullscreen="true">
+
   <ion-list>
+
     <ion-item *ngFor="let newsItem of agricultureNews">
+
       <ion-thumbnail slot="start">
+
         <img [src]="newsItem.urlToImage" alt="Imagem da Notícia">
+
       </ion-thumbnail>
-      
-      <ion-label>
+
+     
+
+      <ion-label class="conteudo-blog">
+
         <h2>{{ newsItem.title }}</h2>
+
         <p>{{ newsItem.description }}</p>
+
         <a [href]="newsItem.url" target="_blank" rel="noopener noreferrer">Ler mais</a>
+
       </ion-label>
-    
+
+   
+
     </ion-item>
+
   </ion-list>
+
 </ion-content>

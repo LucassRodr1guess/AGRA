@@ -1,47 +1,191 @@
-ion-card {
+
+
+.card-usuario {
+
+    padding: 8px;
+
+    background-color: #8BC34A;
+
+}
+
+ 
+
+.card-usuario div {
+
     display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+}
+
+ 
+
+.card-usuario div img {
+
+    width: 48px;
+
+    border-radius: 100%;
+
+}
+
+ 
+
+ 
+
+.card-usuario div ion-card-title {
+
+    font-size: 1rem;
+
+    color: #fff;
+
+}
+
+ 
+
+.card-usuario ion-card-content {
+
+    font-size: .85rem;
+
+    color: #fff;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center  ;
+
+    position: relative;
+
+    margin-top: 12px;
+
+}
+
+ 
+
+.card-usuario ion-card-content::before {
+
+    content: '';
+
+    width: 100%;
+
+    display: block;
+
+    background-color: #9CCC65;
+
+    position: absolute;
+
+    height: 2px;
+
+    top: 1px;
+
+}
+
+ 
+
+.testeBI {
+
+    padding: 0px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
     flex-direction: column;
-    align-items: center;
+
+    text-align: center;
+
 }
 
-ion-card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-ion-button {
-    display: flex;
-    align-items: center;
-}
-
-ion-icon {
-    margin-left: 8px;
-}
+ 
 
 .PosBotao {
+
     padding: 20px;
+
 }
 
+ 
+
+.btn-home {
+
+    background-color: #8BC34A;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+}
+
+ 
+
+.btn-home:hover {
+
+    background-color: #70A731;
+
+}
+
+ 
+
+.btn-home ion-card-title {
+
+    color: #fff;
+
+    font-size: 1rem;
+
+    text-align: center;
+
+}
+
+ 
+
 ion-button {
+
     --background: #8BC34A;
+
     --background-hover: #8BC34A;
+
     --background-activated: #8BC34A;
+
     --background-focused: #8BC34A;
-  
+
+ 
+
     --color: white;
-  
+
+ 
+
     --border-radius: 0;
+
     --border-color: #000;
+
     --border-style: solid;
+
     --border-width: 1px;
-  
+
+ 
+
     --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
-  
+
+ 
+
     --ripple-color: deeppink;
-  
+
+ 
+
     --padding-top: 10px;
+
     --padding-bottom: 10px;
+
   }
 
+ 
 
+ 
+
+ 

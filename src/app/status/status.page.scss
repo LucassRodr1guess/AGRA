@@ -1,0 +1,45 @@
+.card-cultura {
+
+    padding: 8px;
+  
+    background-color: #8BC34A;
+  
+    text-align: center;
+  
+  }
+  
+   
+  
+  .card-cultura ion-card-title {
+  
+    color: #fff;
+  
+  }
+  
+   
+  
+  .card-cultura ion-card-content {
+  
+    color: #fff;
+  
+  }
+  
+   
+  
+  .card-cultura ion-card-content::before {
+  
+    content: '';
+  
+    width: 100%;
+  
+    display: block;
+  
+    background-color: #9CCC65;
+  
+    position: absolute;
+  
+    height: 2px;
+  
+    top: 8px;
+  
+  }

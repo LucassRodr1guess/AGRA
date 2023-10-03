@@ -1,12 +1,65 @@
-.profile-container {
+.profile-information {
+
     display: flex;
+
     align-items: center;
+
     flex-direction: column;
-    padding: 20px 0;
+
+    padding: 12px 0;
+
+    background-color: #2E2E2E;
+
+    margin: 8px;
+
+    border-radius: 10px;
+
 }
 
+ 
+
 .profile-picture {
+
     border-radius: 50%;
-    border: 2px solid #000;
-    width: 200px;
+
+    width: 100px;
+
+    border: 1px solid #000;
+
+}
+
+ 
+
+.profile-description {
+
+    text-align: center;
+
+    font-size: .85rem;
+
+    padding: 4px;
+
+    margin-top: -4px;
+
+}
+
+ 
+
+.profile-contact {
+
+    background-color: #2E2E2E;
+
+    margin: 8px;
+
+    padding: 8px 8px;
+
+    border-radius: 10px;
+
+}
+
+ 
+
+.profile-container ion-button {
+
+    margin: 0 12px;
+
 }
