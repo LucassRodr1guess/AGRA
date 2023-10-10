@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NavigationExtras ,Router} from '@angular/router';
 import { ActivatedRoute } from '@angular/router'; 
-
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cadastro-dados',
@@ -9,20 +9,26 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./cadastro-dados.page.scss'],
 })
 export class CadastroDadosPage implements OnInit {
-
   tipoSolo="";
   tipoCultura="";
   tipoPesticida="";
   dataPlantio:any;
-  constructor(private route: ActivatedRoute, private router: Router) { }
-
-
+  constructor(private route: ActivatedRoute, private router: Router, public alertController: AlertController) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       const getNav = this.router.getCurrentNavigation();
      
     });
+  }
+
+  async exibirAlerta(){
+    const alert = await this.alertController.create({
+      header: 'Status de Cultura criado',
+      message: 'Siga para a página de status acessar a cultura criada.',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
   salvarDados() {
@@ -35,7 +41,6 @@ export class CadastroDadosPage implements OnInit {
         }
     }
 
- 
     const tipoCulturaRadioButtons = document.getElementsByName("tipoCultura");
     for (let i = 0; i < tipoCulturaRadioButtons.length; i++) {
         const radioButtonCultura = tipoCulturaRadioButtons[i] as HTMLInputElement;
@@ -44,7 +49,6 @@ export class CadastroDadosPage implements OnInit {
             break;
         }
     }
-
 
     const tipoPesticidaRadioButtons = document.getElementsByName("tipoPesticida");
     for (let i = 0; i < tipoPesticidaRadioButtons.length; i++) {
@@ -55,7 +59,7 @@ export class CadastroDadosPage implements OnInit {
         }
     }
 
-   console.log(this.dataPlantio);
+    console.log(this.dataPlantio);
     console.log("Tipo de Solo Selecionado: " + this.tipoSolo);
     console.log("Tipo de Cultura Selecionado: " + this.tipoCultura);
     console.log("Tipo de Pesticida Selecionado: " + this.tipoPesticida);

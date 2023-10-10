@@ -17,7 +17,8 @@ export class Tab2Page implements OnInit {
     this.tipoCultura = localStorage.getItem("tipoCultura");
     console.log(this.tipoCultura);
     function criarOpcaoCultura(){
-      const botaoCultura = document.createElement("ion-button");
+        const botaoCultura = document.createElement("ion-button");
+      
    }
    localStorage.setItem("tipoCultura", this.tipoCultura);
   }
