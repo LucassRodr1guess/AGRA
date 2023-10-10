@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
 import {NavigationExtras, Router} from '@angular/router'
 import { CadastroDadosPage } from '../cadastro-dados/cadastro-dados.page';
 
@@ -11,7 +11,7 @@ import { CadastroDadosPage } from '../cadastro-dados/cadastro-dados.page';
 export class Tab2Page implements OnInit {
  
   tipoCultura: any;
-  constructor(public router: Router) {}
+  constructor(public router: Router, private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.tipoCultura = localStorage.getItem("tipoCultura");
@@ -22,6 +22,7 @@ export class Tab2Page implements OnInit {
    }
    localStorage.setItem("tipoCultura", this.tipoCultura);
   }
+  
 
   exibirstatus() {
     // const navigationExtras:NavigationExtras = {state:{}};
@@ -29,5 +30,5 @@ export class Tab2Page implements OnInit {
    }
    //Puxar o nome da cultura selecionada para criar o botão das culturas com o click de exibir os resultados
    
+  }
  
- }
