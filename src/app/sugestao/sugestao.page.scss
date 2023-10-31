@@ -1,3 +1,37 @@
+.card-intro {
+    padding: 8px;
+    background-color: #8BC34A;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-intro ion-card-title {
+    color: #fff;
+}
+
+.card-intro ion-card-content {
+    width: 230px;
+    text-align: center;
+}
+
+.card-intro ion-card-content::before {
+    content: '';
+    width: 100%;
+    display: block;
+    background-color: #9CCC65;
+    position: absolute;
+    height: 2px;
+    top: 8px;
+    left: 0;
+}
+
 .conteudo-principal {
-    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.conteudo-principal ion-list {
+    margin-left: -20px;
+    width: 250px;
 }

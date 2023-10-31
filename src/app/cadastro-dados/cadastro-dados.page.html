@@ -8,58 +8,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  <ion-card>
+  <ion-card class="card-intro">
     <ion-card-title>Cadastro de Dados</ion-card-title>
     <ion-card-content>
       Para conseguirmos entregar as informações neceessárias, insira alguns dados referentes ao seu terreno e sua cultura
     </ion-card-content>
   </ion-card>
-  <div class="conteudo-principal">
-    <h5>Aplicação CAR</h5>
-    <input type="email" name="dadosCAR" id="">
 
+  <div class="conteudo-principal">
     <div>
       <h5>Tipo de solo</h5>
-      <ion-card>
       <ion-radio-group [allowEmptySelection]="true"  [(ngModel)]="tipoSolo">
-        <div style="margin-left: 25px;">
-          <ion-radio value="arenoso">Arenoso</ion-radio><br />
-          <ion-radio value="argiloso">Argiloso</ion-radio><br />
-          <ion-radio value="humoso">Humoso</ion-radio><br />
-          <ion-radio value="calcário">Calcário</ion-radio>
-        </div>
+          <ion-radio value="arenoso" labelPlacement="end" justify="start" color="success">Arenoso</ion-radio>
+          <ion-radio value="argiloso" labelPlacement="end" justify="start" color="success">Argiloso</ion-radio>
+          <ion-radio value="humoso" labelPlacement="end" justify="start" color="success">Humoso</ion-radio>
+          <ion-radio value="calcário" labelPlacement="end" justify="start" color="success">Calcário</ion-radio>
       </ion-radio-group>
-    </ion-card>
     </div>
 
+    <div>
+      <h5>Tipo de Cultura</h5>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="tipoCultura">
+          <ion-radio value="algodao" labelPlacement="end" justify="start" color="success">Algodão</ion-radio>
+          <ion-radio value="soja" labelPlacement="end" justify="start" color="success">Soja</ion-radio>
+        </ion-radio-group>
+      </ion-list>
+    </div>
 
-    <h5>Tipo de Cultura</h5>
-    <ion-card>
-    <ion-list>
-      <ion-radio-group  [(ngModel)]="tipoCultura">
-        <div style="margin-left: 25px;">
-          <ion-radio value="algodao">Algodão</ion-radio><br />
-          <ion-radio value="soja">Soja</ion-radio><br />
-        </div>
-      </ion-radio-group>
-    </ion-list>
-  </ion-card>
-
-
-    <h5>Tipo de Pesticidas</h5>
-    <ion-card>
-    <ion-list>
-      <ion-radio-group [(ngModel)]="tipoPesticida">
-        <div style="margin-left: 25px;">
-          <ion-radio value="herbicidas">Herbicidas</ion-radio><br />
-          <ion-radio value="inseticidas">Inseticidas</ion-radio><br />
-          <ion-radio value="fungicidas">Fungicidas</ion-radio><br />
-          <ion-radio value="nematicidas">Nematicidas</ion-radio><br />
-        </div>
-      </ion-radio-group>
-    </ion-list>
-  </ion-card>
+    <div>
+      <h5>Tipo de Pesticidas</h5>
+      <ion-list>
+        <ion-radio-group [(ngModel)]="tipoPesticida">
+          <ion-radio value="herbicidas" labelPlacement="end" justify="start" color="success">Herbicidas</ion-radio>
+          <ion-radio value="inseticidas" labelPlacement="end" justify="start" color="success">Inseticidas</ion-radio>
+          <ion-radio value="fungicidas" labelPlacement="end" justify="start" color="success">Fungicidas</ion-radio>
+          <ion-radio value="nematicidas" labelPlacement="end" justify="start" color="success">Nematicidas</ion-radio>
+        </ion-radio-group>
+      </ion-list>
+    </div>
 
     <div>
       <h5>Data de Plantio</h5>
@@ -67,8 +54,8 @@
         <ion-input type="date" [(ngModel)]="dataPlantio"></ion-input>
       </ion-item>
     </div>
-   
-    <ion-button expand="block" (click)="salvarDados(); exibirAlerta();"> 
-      Criar Status</ion-button>
+
+    <ion-button expand="block" (click)="salvarDados(); exibirAlerta();">Criar Status</ion-button>
+    
   </div>
 </ion-content>
