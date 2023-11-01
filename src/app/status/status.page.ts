@@ -98,7 +98,7 @@ export class StatusPage implements OnInit {
     const data = new Date(dataPlantio);
     const mes = data.getMonth();
     if (mes == 1 || 2 || 3){
-      this.estacaoPlantio = "verão";
+      this.estacaoPlantio = "verao";
     }else if (mes == 4 || 5 || 6){
       this.estacaoPlantio = "outono";
     }else if (mes == 7|| 8 || 9){
@@ -110,13 +110,13 @@ export class StatusPage implements OnInit {
    estacaoBM(tipoCultura:any, estacaoPlantio:any){
     if(tipoCultura === "algodao"){
       if(estacaoPlantio = "verao" || "outono"){
-        this.estacaoqldd = "A estação de plantio está adequada, pois é benéfica"
+        this.estacaoqldd = "A estação de plantio está adequada, pois é boa para sua cultura"
       }else {
         this.estacaoqldd ="Recomendamos que espere uma mudança de estação para a plantação (verão e outono)"
       }
     }else if(tipoCultura === "soja"){
       if(estacaoPlantio = "inverno" || "primavera"){
-        this.estacaoqldd = "A estação de plantio está adequada, pois é benéfica"
+        this.estacaoqldd = "A estação de plantio está adequada, pois é boa para sua cultura"
       }else {
         this.estacaoqldd ="Recomendamos que espere uma mudança de estação para a plantação (inverno e primavera)"
     }}
@@ -152,7 +152,7 @@ export class StatusPage implements OnInit {
 
    tratarSolo(tipoCultura:any){
     if(tipoCultura === "algodao"){
-      this.tratamentoSolo = "Para uma maior produção e retenção de umidade, o tipo de solo ideal para uma plantação de algodão, para este tipo de solo, é necessário o uso de produtos como esterco, compostagem, terra vegetal e substrato orgânico, assim deixando o solo cheio de nutrientes."
+      this.tratamentoSolo = "Para uma maior produção e aproveitamento do solo, considerando a sua cultura, você deve o preparar de maneira que será necessário o uso de produtos como esterco, compostagem, terra vegetal e substrato orgânico, assim deixando o solo cheio de nutrientes."
     }else if(tipoCultura === "soja"){
       this.tratamentoSolo = "Para a plantação de soja, é recomendado a utilização de um solo arenoso, e para usar este tipo de solo, existe a necessidade de adicionar calcário para a regulação do pH e auxilia no controle de outros fatores presentes no solo, e a adubação constante e equilibrada, sendo necessário muito cuidado."
     }
@@ -167,7 +167,7 @@ export class StatusPage implements OnInit {
    }
    pragasCuidado(tipoCultura:any){
     if(tipoCultura ==="algodao") {
-      this.cuidados = "Para combater as pragas do algodão, como o bicudo-do-algodoeiro, o ácaro-rajado e a lagarta-rosada, é crucial adotar uma abordagem integrada. Realize monitoramentos regulares e, se necessário, utilize inseticidas químicos, como Imidacloprid, Thiamethoxam e Fipronil para o bicudo-do-algodoeiro, Abamectina, Clofentezine e Fenpropathrin para o ácaro-rajado, e Lambda-cialotrina, Deltametrina e Thiamethoxam para a lagarta-rosada. Incentive o uso de métodos biológicos, como Beauveria bassiana, Bacillus thuringiensis e Trichogramma pretiosum, quando possível. Escolha os inseticidas de acordo com a praga, cultura e condições ambientais, seguindo rigorosamente as recomendações das etiquetas dos produtos químicos para garantir a segurança do operador e do meio ambiente. Essas práticas promovem um controle de pragas responsável e sustentável na lavoura de algodão."
+      this.cuidados = "Para combater as pragas do algodão, como o bicudo-do-algodoeiro, o ácaro-rajado e a lagarta-rosada, é necessário adotar uma abordagem integrada. Realize monitoramentos regulares e, se necessário, utilize inseticidas químicos, como Imidacloprid, Thiamethoxam e Fipronil para o bicudo-do-algodoeiro, Abamectina, Clofentezine e Fenpropathrin para o ácaro-rajado, e Lambda-cialotrina, Deltametrina e Thiamethoxam para a lagarta-rosada. Incentive o uso de métodos biológicos, como Beauveria bassiana, Bacillus thuringiensis e Trichogramma pretiosum, quando possível. Escolha os inseticidas dependendo com a praga, cultura e condições ambientais, seguindo rigorosamente as recomendações das etiquetas dos produtos químicos para garantir a segurança do operador e do meio ambiente. Essas práticas promovem um controle de pragas responsável e sustentável na lavoura de algodão."
     } else if(tipoCultura === "soja"){
       this.cuidados = "Para combater as pragas na cultura da soja, como o percevejo-marrom, a lagarta-das-folhas e a lagarta-do-cartucho, é crucial adotar uma abordagem integrada. Realize monitoramentos regulares e, quando necessário, utilize inseticidas químicos como Clorpirifós, Imidacloprid, Bifentrina para o percevejo-marrom, Lambda-cialotrina, Deltametrina, Thiamethoxam para a lagarta-das-folhas e lagarta-do-cartucho. Incentive o uso de métodos biológicos, como a liberação de inimigos naturais e Bacillus thuringiensis, sempre seguindo as recomendações das etiquetas dos produtos químicos para garantir a segurança e a preservação ambiental. Essas práticas promovem um controle de pragas responsável e sustentável na lavoura de soja."
     }
@@ -185,6 +185,6 @@ export class StatusPage implements OnInit {
     if(tipoCultura==="algodao"){
       this.armazenar = "Para armazenar algodão com eficácia e preservar sua qualidade, é essencial um local limpo, seco e bem ventilado, com controle de temperatura (10-15°C) e umidade (50-70%). A embalagem resistente e vedada protege contra umidade e contaminação. O uso de inseticidas e rodenticidas é necessário para evitar pragas, com monitoramento constante. Ventilação adequada, gestão de estoque seguindo o FIFO e segurança das instalações são fundamentais para manter a qualidade e evitar perdas durante o armazenamento."
    } else if(tipoCultura === "soja"){
-    this.armazenar = "Para armazenar soja de forma adequada e preservar sua qualidade, siga diretrizes essenciais. O local deve ser limpo, seco e bem ventilado, com controle de temperatura (10-20°C) e umidade (50-70%). A embalagem, seja a granel ou ensacada, deve ser resistente e vedada contra umidade e pragas. Proteção contra insetos e roedores é crucial, evitando danos mecânicos. Monitoramento regular das condições, ventilação adequada e gestão de estoque são práticas importantes. A segurança das instalações deve ser mantida para evitar roubos e garantir a integridade do estoque. Essas diretrizes são essenciais para manter a qualidade da soja e evitar perdas no armazenamento."
+    this.armazenar = "Para armazenar soja de forma adequada e preservar sua qualidade, siga as seguintes recomendações. O local deve ser limpo, seco e bem ventilado, com controle de temperatura (10-20°C) e umidade (50-70%). A embalagem, seja a granel ou ensacada, deve ser resistente e vedada contra umidade e pragas. Proteção contra insetos e roedores é crucial, evitando danos mecânicos. Monitoramento regular das condições, ventilação adequada e gestão de estoque são práticas importantes. A segurança das instalações deve ser mantida para evitar roubos e garantir a integridade do estoque. Essas diretrizes são essenciais para manter a qualidade da soja e evitar perdas no armazenamento."
    }
 }}
